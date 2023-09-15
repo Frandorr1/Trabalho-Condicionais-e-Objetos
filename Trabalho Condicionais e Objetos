@@ -1,0 +1,93 @@
+//EXERCICIO TRABALHO. 14/09/2023
+//javascriptCopy code
+
+//1.A. O QUE O CÓDIGO ACIMA FAZ? EXPLIQUE EM PALAVRAS SIMPLES:
+// CRIOU UMA VARIAVEL COM VALORES. NOME ALICE; IDADE: 25 ANOS E QUE TEM CARTEIRA DE MOTORISTA: TRUE;
+// APÓS DIGITAMOS A CONDICINAL IF, ONDE CONFIGURA SE A CONDIÇÃO FOR VERDADEIRA ELA É EXECUTADA ( SE ALICE TIVER MAIS QUE 18 ANOS TRUE);
+//SE NÃO FOR TRUE SERÁ EXECUTA A CONDICINAL ELSE ONDE APLICA O CONSOLE.LOG PARA IMPRIMIR QUE ALICE NÃO PODE DIRIGIR( SE ALICE TIVER - QUE 18 ANOS FALSE).
+
+
+//1.B. IMPRIMI "ALICE PODE DIRIGIR!" SE ELA FOR MAIOR QUE 18 ANOS E "ALICE NÃO PODE DIRIGIR" SE FOR MENOR QUE 18 ANOS.
+
+
+//2.A. DETERMINAR SE O ANIMAL É CARNIVORO OU NÃO. (O OBJETIVO DESSE CÓDIGO É CRIAR UMA ESTRUTURA ORGANIZADA PARA MELHOR IDENTIFICAR CADA OBJETO).
+//2.B. SE TRUE: LEÃO É UM ANIMAL CARNIVORO; SE FALSE: LEÃO NÃO É UM ANIMAL CARNIVORO.
+
+//3.A. CRIOU UMA VARIAVEL COM UM NUMERO. PERGUNTA SE O VALOR É MAIOR. MENOR OU IGUAL A 5 E SE O NUMERO É PAR OU IMPAR.
+//3.B. O NUMERO É MAIOR QUE 5 E É PAR.
+
+
+
+//EXERCICIO DE ESCRITA DE CÓDIGO
+//1.
+const pergunta = prompt("olá, qual sua idade?");
+let idade = 28;
+
+const pessoa = {
+nome: "Franciele",
+idade: 28,
+maiorDeIdade: true,
+}
+if (pessoa.idade >=18 && pessoa.maiorDeIdade){
+  console.log (`${pessoa.nome} você é maior de idade!`)
+} else{
+  console.log(`${pessoa.nome} você é menor de idade!`)
+}
+
+//2.
+const frase = prompt ("qual turno do dia você estuda?"); // m t n 
+
+if(frase === "M"){
+console.log("estuda no matutino");
+}else if (frase === "T"){
+console.log("estuda na tarde");
+}else if (frase === "N"){
+console.log("estuda no noturno")
+}else{
+console.log("nenhuma das opções")
+}
+
+
+///3.
+switch (frase) {
+  case 'M':
+    console.log('matutino')
+    
+    break
+case 'T':
+  console.log('tarde')
+  break
+case 'N':
+  console.log('Noturno')
+  break
+  default:
+    console.log('turno não encontrado')
+    break;
+}
+
+//4.
+const aluno = {
+  nome: 'Franciele',
+  idade: 28,
+  tipoDeCurso: 'ti',
+  temBolsa:true,
+
+}
+if (aluno.idade <=30) {
+  if(aluno.temBolsa === false){
+    if(aluno.tipoDeCurso === "graduacao"){
+      console.log(`${aluno.idade} você pode se candidatar a uma bolsa de estudos!`)
+    }
+  }
+}else {
+  console.log(`${aluno.idade} Desculpe, você não atende aos requisitos para a bolsa`)
+}
+
+//5.
+const produto ={
+  nome: 'amaciante',
+  preco: 20,
+  desconto: 2,
+  freteGratis: true,
+}
+
